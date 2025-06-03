@@ -22,6 +22,7 @@ impl CSV for TypeA {
     fn headers(&self) -> String {
         format!("{},{},{}", "Data Name", "Amount", "Date",)
     }
+    
     fn row(&self) -> String {
         format!(
             "{},{},{}",
