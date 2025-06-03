@@ -1,8 +1,8 @@
 This library provides a lightweight way to export data to the CSV format via trait implementation.
 
-[<img alt="crates.io" src="https://img.shields.io/crates/v/anyhow.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/to_csv)
+[<img alt="crates.io" src="https://img.shields.io/crates/v/to_csv.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/to_csv)
 ![](https://img.shields.io/crates/d/to_csv)
-[<img alt="docs.rs" src="https://img.shields.io/badge/docs.rs-anyhow-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="20">](https://docs.rs/to_csv)
+[<img alt="docs.rs" src="https://img.shields.io/badge/docs.rs-to_csv-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="20">](https://docs.rs/to_csv)
 
 ## Example
 
