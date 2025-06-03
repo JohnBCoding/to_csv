@@ -24,6 +24,6 @@ impl CSV for TypeA {
 ```
 
 ```csv
-Organization,Network Name,Client Type,Client Description,Client Manufacturer,Client IP,Client MAC,Client Port,
-Focus Brands Corporate,Focus Brands RT Lab,DMZ Device,,TRENDnet,10.10.6.4,3c:8c:f8:ff:52:c5,6,
+Data Name,Amount,Date
+Test Data,10,6/3/2025
 ```
