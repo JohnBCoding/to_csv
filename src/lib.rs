@@ -14,6 +14,12 @@
 //! ## Example
 
 //! ```rust
+//! struct TypeA {
+//!     name: String,
+//!     value: String,
+//!     date: String,
+//! }
+//!
 //! impl CSV for TypeA {
 //!     fn headers(&self) -> String {
 //!         format!("{},{},{}", "Data Name", "Amount", "Date",)
@@ -27,8 +33,9 @@
 //!         )
 //!     }
 //! }
-
+//!
 //! fn main() {
+//!     let entries = vec![TypeA {name: "Test Data", value: "10", date: "6/3/2025"}]
 //!     let _ = to_csv_file("csv_file.csv", &entries);
 //! }
 //! ```
