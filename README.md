@@ -8,7 +8,7 @@ This library provides a lightweight way to export data to the CSV format via tra
 
 ```toml
 [dependencies]
-to_csv = "0.2"
+to_csv = "1.0"
 ```
 
 ```rust

@@ -8,7 +8,7 @@
 
 //! ```toml
 //! [dependencies]
-//! to_csv = "0.2"
+//! to_csv = "1.0"
 //! ```
 
 //! ## Example
