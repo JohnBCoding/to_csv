@@ -14,7 +14,7 @@ pub trait CSV {
 }
 
 /// Converts given Vec<T> that implements the CSV trait to a csv string.
-pub fn to_csv_string(entries: &Vec<Box<dyn CSV>>) -> String {
+pub fn to_csv_string<T: CSV>(entries: &Vec<T>) -> String {
     let mut csv_string = format!("{},\n", entries[0].headers());
 
     entries.iter().for_each(|entry| {
@@ -25,7 +25,7 @@ pub fn to_csv_string(entries: &Vec<Box<dyn CSV>>) -> String {
 }
 
 /// Converts given Vec<T> that implements the CSV trait to a csv string that is URL encoded
-pub fn to_csv_string_with_encode(entries: &Vec<Box<dyn CSV>>) -> String {
+pub fn to_csv_string_with_encode<T: CSV>(entries: &Vec<T>) -> String {
     let mut csv_string = format!("{},%0D%0A", entries[0].headers());
 
     entries.iter().for_each(|entry| {
@@ -36,7 +36,7 @@ pub fn to_csv_string_with_encode(entries: &Vec<Box<dyn CSV>>) -> String {
 }
 
 /// Converts given Vec<T> that implements the CSV trait to a csv string then saves it to the given file name
-pub fn to_csv_file(file_name: &str, entries: &Vec<Box<dyn CSV>>) -> Result<(), Error> {
+pub fn to_csv_file<T: CSV>(file_name: &str, entries: &Vec<T>) -> Result<(), Error> {
     let mut csv_string = format!("{},\n", entries[0].headers());
 
     entries.iter().for_each(|entry| {
