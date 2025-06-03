@@ -8,6 +8,7 @@ description = "Lightweight and easy exports to CSV"
 documentation = "https://docs.rs/to_csv"
 keywords = ["csv", "comma", "delimited", "parser"]
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/JohnBCoding/to_csv"
 rust-version = "1.85"
 
 [dependencies]
