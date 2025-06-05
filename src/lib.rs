@@ -36,7 +36,7 @@
 //! }
 //!
 //! fn main() {
-//!     let entries = vec![TypeA {name: "Test Data", value: "10", date: "6/3/2025"}]
+//!     let entries = vec![TypeA {name: "Test Data".to_string(), value: "10".to_string(), date: "6/3/2025".to_string()}]
 //!     let _ = to_csv_file("csv_file.csv", &entries);
 //! }
 //! ```
